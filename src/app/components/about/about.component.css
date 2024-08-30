@@ -1,0 +1,15 @@
+.centered-content {
+    text-align: center;
+    margin: 20px;
+}
+
+.centered-content a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007bff;
+}
+
+.centered-content a:hover {
+    text-decoration: underline;
+}

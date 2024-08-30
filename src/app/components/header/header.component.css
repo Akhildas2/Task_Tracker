@@ -2,5 +2,12 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0 20px;
   margin-bottom: 20px;
+}
+
+header h1 {
+  flex: 1;
+  text-align: center;
+  margin: 0;
 }

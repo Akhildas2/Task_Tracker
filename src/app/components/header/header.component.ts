@@ -11,7 +11,7 @@ import { Router } from '@angular/router';
 export class HeaderComponent {
   title: string = 'Task Tracker';
   showAddTask: boolean = false;
-  subscription: Subscription = new Subscription();
+  subscription: Subscription;
 
   constructor(private uiService: UiService, private router: Router) {
     this.subscription = this.uiService.onToggle().subscribe((value) => (this.showAddTask = value))

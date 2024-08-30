@@ -1,3 +1,10 @@
 .add-form {
-  margin-bottom: 40px;
+  margin: 20px auto; 
+  border: 3px solid #d41b1b; 
+  padding: 1rem;
+  border-radius: 10px ;
+  background: #fff; 
+  max-width: 750px;
+  width: 100%;
 }
+

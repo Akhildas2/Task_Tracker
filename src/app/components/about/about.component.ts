@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrl: './about.component.css'
 })
 export class AboutComponent {
-
+  version: string = '1.0.0';
 }

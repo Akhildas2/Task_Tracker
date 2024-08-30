@@ -3,14 +3,16 @@
   margin: 5px;
   padding: 10px 20px;
   cursor: pointer;
-}
-
-.task.reminder {
-  border-left: 5px solid green;
+  border-radius: 15px;
 }
 
 .task h3 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.icons {
+  display: flex;
+  gap: 10px;
 }
