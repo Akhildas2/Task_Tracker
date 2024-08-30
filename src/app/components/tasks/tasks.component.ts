@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { TaskService } from '../../services/task.service';
-import { Task } from '../../Task';
+import { Task } from '../../../../Task';
 
 @Component({
   selector: 'app-tasks',
@@ -23,7 +23,7 @@ export class TasksComponent {
     this.taskService.updateTaskReminder(task).subscribe()
   }
 
-  addTask(task:Task){
-    this.taskService.addTask(task).subscribe((task)=>(this.tasks.push(task)))    
+  addTask(task: Task) {
+    this.taskService.addTask(task).subscribe((task) => (this.tasks.push(task)))
   }
 }

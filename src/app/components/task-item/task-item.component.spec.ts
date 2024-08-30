@@ -10,7 +10,7 @@ describe('TaskItemComponent', () => {
     await TestBed.configureTestingModule({
       declarations: [TaskItemComponent]
     })
-    .compileComponents();
+      .compileComponents();
 
     fixture = TestBed.createComponent(TaskItemComponent);
     component = fixture.componentInstance;
