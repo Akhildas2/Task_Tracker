@@ -14,7 +14,7 @@ export class AddTaskComponent {
 
   @Output() onAddTask: EventEmitter<Task> = new EventEmitter();
   text: string = '';
-  day: string = '';
+  date: string = '';
   reminder: boolean = false;
   showAddTask: boolean = false;
   subscription: Subscription;
@@ -29,8 +29,8 @@ export class AddTaskComponent {
     if (!this.text) {
       return alert('Please add a task')
     }
-    if (!this.day) {
-      return alert("Please add day")
+    if (!this.date) {
+      return alert("Please add date")
     }
 
     this.taskService.checkTaskExists(this.text).subscribe(exists => {
@@ -39,14 +39,14 @@ export class AddTaskComponent {
       }
       const newTask = {
         text: this.text,
-        day: this.day,
+        date: this.date,
         reminder: this.reminder
       }
 
       this.onAddTask.emit(newTask);
 
       this.text = '';
-      this.day = '';
+      this.date = '';
       this.reminder = false;
     })
 

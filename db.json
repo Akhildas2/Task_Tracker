@@ -1,28 +1,22 @@
 {
   "tasks": [
     {
-      "id": "0a27",
+      "id": "2ee2",
       "text": "review ",
-      "day": "may 21",
+      "date": "2024-09-10",
       "reminder": true
     },
     {
-      "id": "0f21",
+      "id": "5dfd",
+      "text": "work",
+      "date": "2024-09-14",
+      "reminder": true
+    },
+    {
+      "id": "70a2",
       "text": "exam",
-      "day": "sep 5",
+      "date": "2024-10-01",
       "reminder": false
-    },
-    {
-      "id": "5fb5",
-      "text": "class ",
-      "day": "may 31",
-      "reminder": false
-    },
-    {
-      "id": "b9eb",
-      "text": "dw",
-      "day": "may 21",
-      "reminder": true
     }
   ]
 }

@@ -1,14 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { TaskService } from '../../services/task.service';
 import { Task } from '../../../../Task';
 
 @Component({
   selector: 'app-tasks',
   templateUrl: './tasks.component.html',
-  styleUrl: './tasks.component.css'
+  styleUrls: ['./tasks.component.css']
 })
-export class TasksComponent {
-
+export class TasksComponent implements OnInit {
   tasks: Task[] = [];
 
   constructor(private taskService: TaskService) { }
@@ -18,16 +17,17 @@ export class TasksComponent {
   }
 
   deleteTask(task: Task) {
-    this.taskService.deleteTask(task).subscribe(() => (this.tasks = this.tasks.filter((t) => t.id !== task.id)));
+    this.taskService.deleteTask(task).subscribe(() => 
+      this.tasks = this.tasks.filter((t) => t.id !== task.id)
+    );
   }
 
   toggleReminder(task: Task) {
     task.reminder = !task.reminder;
-    this.taskService.updateTaskReminder(task).subscribe()
+    this.taskService.updateTaskReminder(task).subscribe(); 
   }
 
   addTask(task: Task) {
-    this.taskService.addTask(task).subscribe((task) => (this.tasks.push(task)))
+    this.taskService.addTask(task).subscribe((task) => this.tasks.push(task));
   }
-
 }

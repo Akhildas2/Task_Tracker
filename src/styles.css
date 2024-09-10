@@ -8,7 +8,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #f0f4f8;
+  background-color: #000000;
   color: #333;
 }
 
@@ -17,7 +17,7 @@ body {
   margin: 5% auto;
   overflow: auto;
   min-height: 300px;
-  border: 3px solid #ff6f61;
+  border: 3px solid #000000;
   padding: 1rem; 
   border-radius: 10px;
   background: #fff;
@@ -26,7 +26,7 @@ body {
 
 .btn {
   display: inline-block;
-  background: #ff6f61;
+  background: #008000;
   color: #fff;
   border: none;
   padding: 12px 24px;
@@ -37,10 +37,6 @@ body {
   font-size: 16px;
   font-family: inherit;
   transition: background 0.3s ease, transform 0.1s ease;
-}
-
-.btn:hover {
-  background: #ff4d41;
 }
 
 .btn:focus {
